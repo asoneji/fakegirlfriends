@@ -3,9 +3,7 @@ package com.intuit.ctodev.qa.iday.library;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import org.testng.annotations.TestInstance;
 
 public class CheckValueIsEmptyTest
 {
@@ -23,7 +21,7 @@ public class CheckValueIsEmptyTest
     public Object[][] testDP()
     {
         return new Object[][]
-        {
+       {
                 { "test1"}, //regular string
                 { " test2 "}, //string trailing spaces
                 { null }, //null

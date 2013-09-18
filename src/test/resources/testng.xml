@@ -6,6 +6,10 @@
 			<run>
                 <exclude name="testempty" />
                 <include name="testnull" />
+                <!-- 
+                <include name="dptest" />
+                 -->
+                
 			</run>
 		</groups>
 
