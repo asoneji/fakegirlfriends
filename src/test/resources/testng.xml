@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="InnovationDaysTestNGProject" verbose="1">
+
+	<test name="InnovationDaysTestNGProject">
+		<groups>
+			<run>
+                <exclude name="testempty" />
+                <include name="testnull" />
+			</run>
+		</groups>
+
+
+		<classes>
+			<class name="com.intuit.ctodev.qa.iday.library.CheckValueIsNotNullTest" />
+			<class name="com.intuit.ctodev.qa.iday.library.CheckValueIsEmptyTest" />
+		</classes>
+
+
+	</test>
+</suite>
