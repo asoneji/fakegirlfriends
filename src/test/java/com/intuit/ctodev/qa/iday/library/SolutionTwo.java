@@ -9,7 +9,7 @@ import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 import org.testng.ITest;
 
-public class SolutionTwo {
+public class SolutionTwo implements ITest {
 	// ABSTRACT PORTION
 	protected Data testInputs;
 	protected Object[][] dp;
@@ -24,18 +24,18 @@ public class SolutionTwo {
 		this.dp = new Object[][]{ this.testInputs.data };
 	}
 	
-
     @DataProvider(name = "FakeGirlfriendsDataProvider")
 	public Object[][] getDP() {
 		return dp;
 	}
 
+    // SUBCLASS PORTION
 	@Test(groups = { "dptest", "solutiontwo" })
 	public void actualTestMethod(Object value) {
 		assertTrue(value != null, "value is null.");
 	}
 	
-	// SUBCLASS PORTION
+	
 	public Object[] createData() {
 		return new Object[] { 
 				new Data(new Object[] { "test1" }, "regular string"), 
@@ -50,6 +50,7 @@ public class SolutionTwo {
 
 	@Factory
 	public Object[] createInstances() {
+		System.out.println("HERE");
 		Object[] data = this.createData();
 		Object[] result = new Object[data.length];
 		int i = 0;

@@ -23,6 +23,9 @@
 			<class name="com.intuit.ctodev.qa.iday.library.SolutionTwo" />
 		</classes>
 
+		<listeners>
+		    <listener class-name="com.intuit.ctodev.qa.iday.library.FakeGirlfriendsAnnotationTransformer" />
+		</listeners>
 
 	</test>
 </suite>
