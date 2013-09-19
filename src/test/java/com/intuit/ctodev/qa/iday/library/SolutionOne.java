@@ -106,5 +106,17 @@ public class SolutionOne {
 		public Object getData() {
 			return data;
 		}
+		
+		public void setId(int id) {
+			this.id = id;
+		}
+		
+		public void setDescription(String description) {
+			this.description = description;
+		}
+		
+		public void setData(Object data) {
+			this.data = data;
+		}
 	}
 }

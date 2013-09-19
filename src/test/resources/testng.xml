@@ -6,7 +6,8 @@
 			<run>
                 <exclude name="testempty" />
                 <exclude name="solutionone" />
-                <include name="testnull" />
+                <include name="solutiontwo" />
+                <exclude name="testnull" />
                 <!-- 
                 <include name="dptest" />
                  -->
@@ -19,6 +20,7 @@
 			<class name="com.intuit.ctodev.qa.iday.library.CheckValueIsNotNullTest" />
 			<class name="com.intuit.ctodev.qa.iday.library.CheckValueIsEmptyTest" />
 			<class name="com.intuit.ctodev.qa.iday.library.SolutionOne" />
+			<class name="com.intuit.ctodev.qa.iday.library.SolutionTwo" />
 		</classes>
 
 
