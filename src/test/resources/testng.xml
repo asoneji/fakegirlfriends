@@ -5,6 +5,7 @@
 		<groups>
 			<run>
                 <exclude name="testempty" />
+                <exclude name="solutionone" />
                 <include name="testnull" />
 			</run>
 		</groups>
@@ -13,6 +14,7 @@
 		<classes>
 			<class name="com.intuit.ctodev.qa.iday.library.CheckValueIsNotNullTest" />
 			<class name="com.intuit.ctodev.qa.iday.library.CheckValueIsEmptyTest" />
+			<class name="com.intuit.ctodev.qa.iday.library.SolutionOne" />
 		</classes>
 
 
