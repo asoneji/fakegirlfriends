@@ -7,6 +7,10 @@
                 <exclude name="testempty" />
                 <exclude name="solutionone" />
                 <include name="testnull" />
+                <!-- 
+                <include name="dptest" />
+                 -->
+                
 			</run>
 		</groups>
 
