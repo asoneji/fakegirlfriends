@@ -4,6 +4,16 @@ public class TestDetail
 {
     private String testCaseName = null;
 
+    public TestDetail(String testCaseName)
+    {
+        this.testCaseName = testCaseName;
+    }
+
+    public TestDetail()
+    {
+        // TODO Auto-generated constructor stub
+    }
+
     public String getTestCaseName()
     {
         return testCaseName;

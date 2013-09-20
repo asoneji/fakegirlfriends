@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="InnovationDaysTestNGProject" verbose="1">
+
+<!-- 
+    <listeners>
+        <listener class-name="com.intuit.ctodev.qa.iday.placeholder.DetailLogTestListener" />
+    </listeners>
+ -->
+    <listeners>
+        <listener class-name="com.intuit.ctodev.qa.iday.placeholder.DetailLogTestListener" />
+    </listeners> 
+    
+	<test name="InnovationDaysTestNGProject">
+		<groups>
+			<run>
+                <exclude name="testempty" />
+                <exclude name="solutionone" />
+                <include name="demotestname" />
+                <include name="testnull" />
+                <!-- 
+                <include name="dptest" />
+                 -->
+                
+			</run>
+		</groups>
+
+
+		<classes>
+			<class name="com.intuit.ctodev.qa.iday.library.CheckValueIsNotNullTest" />
+			<class name="com.intuit.ctodev.qa.iday.library.CheckValueIsEmptyTest" />
+			
+			<class name="com.intuit.ctodev.qa.iday.library.CheckValueTestSolution2" />
+			
+            <class name="com.intuit.ctodev.qa.iday.placeholder.DemoTestName" />			
+		</classes>
+
+
+	</test>
+</suite>
