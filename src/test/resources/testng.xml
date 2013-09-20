@@ -4,11 +4,18 @@
 	<test name="InnovationDaysTestNGProject">
 		<groups>
 			<run>
-                <include name="afterfix" />
-                <!-- 
                 <include name="testnull" />
+
+                <!-- 
+                <exclude name="afterfix" />
+                <exclude name="beforefix" />
+                
+                <exclude name="iday" />
+                
+                <exclude name="testnull" />
                 <exclude name="testuppercase" />
                 <exclude name="testempty" />
+                <exclude name="testemptynodp" />
                 
                 
                 <include name="dptest" />

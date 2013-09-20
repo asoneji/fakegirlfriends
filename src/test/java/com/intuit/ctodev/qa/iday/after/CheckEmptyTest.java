@@ -2,16 +2,18 @@ package com.intuit.ctodev.qa.iday.after;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.DescribedTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class CheckEmptyTest
+public class CheckEmptyTest extends DescribedTest
 {
 
     @Test(description="check value is empty", groups = { "testempty", "afterfix"}, dataProvider = "testDP")
     public void testValueIsEmpty(String value)
     {               
         System.out.println("test value is empty - test start");
+        setTestDescription(value);
         assertTrue(value.isEmpty(), "value is not empty.");
         System.out.println("test value is empty - test end");       
     }
@@ -34,6 +36,7 @@ public class CheckEmptyTest
     {              
         String value = "";
         System.out.println("Start - sample test");
+        setTestDescription(value);
         assertTrue(value.isEmpty(), "value is not empty.");
         System.out.println("End - sample test");        
     }
