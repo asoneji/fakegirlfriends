@@ -4,28 +4,32 @@
 	<test name="InnovationDaysTestNGProject">
 		<groups>
 			<run>
-                <exclude name="testempty" />
-                <exclude name="solutionone" />
-                <include name="solutiontwo" />
-                <exclude name="testnull" />
+                <include name="afterfix" />
                 <!-- 
+                <include name="testnull" />
+                <exclude name="testuppercase" />
+                <exclude name="testempty" />
+                
+                
                 <include name="dptest" />
+                 
+                 <include name="beforefix" />
                  -->
+                 
                 
 			</run>
 		</groups>
 
 
 		<classes>
-			<class name="com.intuit.ctodev.qa.iday.library.CheckValueIsNotNullTest" />
-			<class name="com.intuit.ctodev.qa.iday.library.CheckValueIsEmptyTest" />
-			<class name="com.intuit.ctodev.qa.iday.library.SolutionOne" />
-			<class name="com.intuit.ctodev.qa.iday.library.SolutionTwo" />
-		</classes>
+			<class name="com.intuit.ctodev.qa.iday.before.CheckEmptyTest" />
+            <class name="com.intuit.ctodev.qa.iday.before.CheckValueTest" />
+            <class name="com.intuit.ctodev.qa.iday.before.IDayTest" />
 
-		<listeners>
-		    <listener class-name="com.intuit.ctodev.qa.iday.library.FakeGirlfriendsAnnotationTransformer" />
-		</listeners>
+            <class name="com.intuit.ctodev.qa.iday.after.CheckEmptyTest" />
+            <class name="com.intuit.ctodev.qa.iday.after.CheckValueTest" />
+            <class name="com.intuit.ctodev.qa.iday.after.IDayTest" />                  			
+		</classes>
 
 	</test>
 </suite>
